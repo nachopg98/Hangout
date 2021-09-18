@@ -1,0 +1,39 @@
+<head>
+
+    <link rel="stylesheet" href="\css\new.css">
+
+</head>
+<body>
+  <form action="/new" method="POST" class="formulario">
+    <h1 class="formulario__titulo">Concertar una cita</h1>
+
+    <input type="text" class="formulario__input" name="titulo">
+    <label for="" class="formulario__label">Título</label>
+
+    <input type="text" class="formulario__input" name="descripcion">
+    <label for="" class="formulario__label">Describa la actividad a desarrollar</label>
+
+    <input type="datetime-local" class="formulario__input" name="date">
+    <label for="" class="formulario__label"></label>
+
+    <input type="text" class="formulario__input" name="lugar">
+    <label for="" class="formulario__label">Lugar</label>
+
+    <select class="form-select" aria-label="Default select example" name="compañia">
+      <option selected>Escoja su compañia</option>
+      <option value="Nacho y Sara">Contigo me vale bb</option>
+      <option value="La banda del tercio">Todo el que quiera venir</option>
+      <option value="Nacho Sara Mireia">Hard Mode: Llamamos a Mireia y que sea lo que dios quiera</option>
+      <option value="SadBoy">Contigo no, bicho</option>
+    </select>
+
+    <input type="text" class="formulario__input" name="detalles">
+    <label for="" class="formulario__label">Detalles a tener en cuenta</label>
+
+
+    <input type="submit" class="formulario__submit">
+  </form>
+
+    <script src="\scripts\contacto.js"></script>
+
+</body>

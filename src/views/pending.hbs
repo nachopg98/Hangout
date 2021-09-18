@@ -1,0 +1,46 @@
+<head>
+    <link rel="stylesheet" href="\css\pending.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mis citas</h1>
+        <hr>
+        <div id="graella">
+            {{#each citas}}
+            <div class="card">
+                <div class="card-header">                    
+                    <h2 class="card-title">{{titulo}}</h2>
+                </div>
+                <div class="card-body">
+                    <h5>Descripción de la velada</h5>
+                    <p class="card-text">{{descripcion}}</p>
+                    <h5>Lugar de la velada</h5>
+                    <p class="card-text">{{lugar}}</p>
+                    <h5>Asistentes</h5>
+                    <p class="card-text">{{compañia}}</p>
+                    <h5>Detalles a tener en cuenta</h5>
+                    <p class="card-text">{{detalles}}</p>
+                    <h5>Día y hora</h5>
+                    <p class="card-text">{{date}}</p>
+                </div>
+                <div class="card-footer">
+                    <div id="botones">
+                        <form action="/pending/{{_id}}/edit" method="GET">
+                            <button type="submit" class="btn btn-success"><i class="fa fa-plus"></i>Modificar
+                                cita</button>
+                        </form>
+                        <br>
+                        <form action="/pending/{{_id}}?_method=DELETE"
+                            method="POST">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button type="submit" class="btn btn-danger"><i class="fa fa-times"></i>Eliminar
+                                cita</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</body>

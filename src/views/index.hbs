@@ -1,0 +1,28 @@
+<head>
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+<div class="jumbotron">
+  <h1>¡Bienvenida Sara a Hangout!</h1>
+  <hr>
+  <p>Desde Hangout te ofrecemos una útil herramienta para quedar con el pretty boy, perico, medio vasco, medio soriano, que veranea en Teruel, también llamado Nacho. 13 años de buenos servicios nos avalan.</p>
+  <br>
+  <div id="cuadro">
+    <div id="texto">
+      <br>
+      <br>
+      <p>En Hangout sabemos como contentar a sus clientes, por eso cada día más gente se suma a nuestra empresa. Cervezas, comida, peli de Marvel, etc. Tu escoges del plan, simplemente sigue las instrucciones.</p>
+      <br>
+      {{#if user}}
+      <a href="/new" class="btn btn-outline-dark">¡Empecemos!</a>
+      {{else}}
+      <a href="/signup" class="btn btn-outline-dark">¡Empecemos!</a>
+      {{/if}}
+    </div>
+    <div id="foto">
+      <img src="fotos/cerve.jpeg" alt="">
+    </div>
+  </div>
+</div>
+</body>

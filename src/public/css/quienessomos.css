@@ -1,0 +1,30 @@
+.jumbotron{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: white;
+}
+
+p, h2,h5{
+    color: coral;
+}
+
+#cuadro{
+    display: flex;
+}
+
+#texto{
+    padding: 20px;
+}
+
+img{
+    width: 200px;
+}
+
+@media(max-width:645px){
+    #cuadro{
+        display: block;
+    }
+}

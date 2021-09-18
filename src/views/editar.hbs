@@ -1,0 +1,39 @@
+<head>
+
+    <link rel="stylesheet" href="\css\editar.css">
+
+</head>
+<body>
+  <form class="formulario" action="/editar/{{cita._id}}?_method=PUT" method="POST" enctype="multipart/form-data">
+    <h1 class="formulario__titulo">Editar una cita</h1>
+
+    <input type="text" class="formulario__input" name="titulo" value="{{cita.titulo}}">
+    <label for="" class="formulario__label">Título</label>
+
+    <input type="text" class="formulario__input" name="descripcion" value="{{cita.descripcion}}">
+    <label for="" class="formulario__label">Describa la actividad a desarrollar</label>
+
+    <input type="datetime-local" class="formulario__input" name="date" value="{{cita.date}}">
+    <label for="" class="formulario__label">Fecha y hora</label>
+
+    <input type="text" class="formulario__input" name="lugar" value="{{cita.lugar}}">
+    <label for="" class="formulario__label">Lugar</label>
+
+    <select class="form-select" aria-label="Default select example" name="compañia" value="{{cita.compañia}}">
+      <option selected>Escoja su compañia</option>
+      <option value="Nacho y Sara">Contigo me vale bb</option>
+      <option value="La banda del tercio">Todo el que quiera venir</option>
+      <option value="Nacho Sara Mireia">Hard Mode: Llamamos a Mireia y que sea lo que dios quiera</option>
+      <option value="Sad Nacho">Contigo no, bicho</option>
+    </select>
+
+    <input type="text" class="formulario__input" name="detalles" value="{{cita.detalles}}">
+    <label for="" class="formulario__label">Detalles a tener en cuenta</label>
+
+
+    <input type="submit" class="formulario__submit">
+  </form>
+
+    <script src="\scripts\contacto.js"></script>
+
+</body>

@@ -1,0 +1,89 @@
+
+.container{
+    margin-top: 60px;
+    height: 100%;
+}
+
+#graella{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+    padding: 2%;
+    border-radius: 5px;
+}
+
+#graella .card{
+    margin: 2px;
+}
+
+
+@media(max-width: 768px){
+    #graella{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(7,1fr);
+    }
+}
+
+@media(max-width: 529px){
+    h4{
+        font-size: 0.8rem;
+    }
+
+    h5{
+        font-size: 0.6rem;
+    }
+
+    #graella{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(10,1fr);
+    }
+}
+
+@media(max-width: 358px){
+    #graella{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(20,1fr);
+    }
+}
+
+#perfil{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#logo img{
+    width: 50%;
+    height: 100%;
+}
+
+#logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;       
+}
+
+#logo h4{
+    text-align: center;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+}
+
+#datos{
+    width: 50%;
+    border: 2px solid salmon;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+#total{
+    width: 50%;
+}
+
+p{
+    font-size: medium;
+}

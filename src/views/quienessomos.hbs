@@ -1,0 +1,26 @@
+<head>
+    <link rel="stylesheet" href="\css\quienessomos.css">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h2>¿Quiénes somos?</h2>
+        <hr>
+        <div id="cuadro">
+        <div id="texto">
+            <p>Desde 1998, nuestra empresa lleva buscando planes para hincharse a comer y a beber sin contemplaciones. No nos dejamos llevar por modas y simplemente vamos a lo que nos gusta. Hemos hecho de nuestro don una profesión y esperamos que te unas a nuestra etilica empresa.</p>
+            <p>Nuestro fundador, el pretty boy, perico, medio vasco, medio soriano, que veranea en Teruel, también llamado Nacho, sabe de su potencial, así que esperamos verla muy pronto.</p>
+            <p>Para concertar una cita pulsa el botón y sigue las instrucciones</p>
+            <br>
+            {{#if user}}
+            <a href="/new" class="btn btn-outline-dark">¡Empecemos!</a>
+            {{else}}
+            <a href="/signup" class="btn btn-outline-dark">¡Empecemos!</a>
+            {{/if}}
+                </div>
+        <div id="foto">
+            <img src="fotos/yo.jpg" alt="">
+        </div>
+        </div>
+    </div>
+</body>

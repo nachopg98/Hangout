@@ -1,0 +1,58 @@
+.jumbotron{
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h1{
+    color: coral;
+}
+
+p{
+    color: coral;
+}
+
+#cuadro{
+    display: flex;
+}
+
+#foto{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto{
+    width: 50%;
+    border-right: 2px solid coral;
+    padding-right: 60px;
+}
+
+#foto img{
+    width: 75%;
+    height: 75%;
+}
+
+
+@media(max-width: 761px){
+    #cuadro{
+        display: block;
+    }
+
+    #foto{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #texto{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        border-right: 0px;
+    }
+}
